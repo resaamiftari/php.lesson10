@@ -12,6 +12,7 @@ if(isset($_POST['submit'])){
     $sqlQuery->bindParam(":name",$name);
     $sqlQuery->bindParam(":username",$username);
     $sqlQuery->bindParam(":email",$email);
+    $sqlQuery->execute();
 
     echo "Data saved successfully";
     header("dashboard.php");
