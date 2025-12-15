@@ -29,6 +29,7 @@
         <th>Name</th>
         <th>Surname</th>
         <th>Email</th>
+        <th>Update</th>
     </thead>
 
     <tbody>
@@ -40,6 +41,7 @@
             <td><?=$user['name']?></td>
             <td><?=$user['username']?></td>
             <td><?=$user['email']?></td>
+            <td> <?= "<a href='delete.php?id=$user[id]'>Delete</a> | <a href='edit.php?id=$user[id]'>Update<\a>"?></td>
         </tr>
         <?php
         }
